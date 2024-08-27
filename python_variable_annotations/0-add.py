@@ -4,6 +4,5 @@
 
 
 def add(a: float, b: float) -> float:
-    ''' created function with a and b as parameter,
-    setting them as floats and returning a float '''
+    ''' created function, setting parameters as floats and returning a float '''
     return a + b
