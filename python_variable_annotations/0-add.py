@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 
-''' takes a float a and a float b as arguments and returns their sum as a float '''
+''' takes a float a and a float b as arguments and returns float '''
 
 
 def add(a: float, b: float) -> float:
-    ''' created function, setting parameters as floats and returning a float '''
+    ''' created function, setting parameters '''
     return a + b
