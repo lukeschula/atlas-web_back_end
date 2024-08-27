@@ -1,9 +1,4 @@
 #!/usr/bin/env python3
 
-def add(a, b):
-    a = float(a)
-    b = float(b)
-
+def add(a: float, b: float) -> float:
     return a + b
-    print(type(a, b))
-
