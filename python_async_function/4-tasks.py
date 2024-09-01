@@ -6,10 +6,10 @@ task_wait_random = __import__('0-basic_async_syntax').wait_random
 
 
 async def task_wait_n(n: int, max_delay: int) -> List[float]:
-    """"""
-    delayed = await asyncio.gather(*(task_wait_random(max_delay) for _ in range(n)))
-    for i in range(len(delayed)):
-        for j in range(i + 1, len(delayed)):
-            if delayed[i] >= delayed[j]:
-                delayed[i], delayed[j] = delayed[j], delayed[i]
-    return delayed
+    """task_wait_random is being called."""
+    DL = await asyncio.gather(*(task_wait_random(max_delay) for _ in range(n)))
+    for i in range(len(DL)):
+        for j in range(i + 1, len(DL)):
+            if DL[i] >= DL[j]:
+                DL[i], DL[j] = DL[j], DL[i]
+    return DL
