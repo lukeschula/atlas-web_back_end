@@ -1,5 +1,10 @@
+#!/usr/bin/env python3
+""" task 1 """
+BaseCaching = __import__('base_caching').BaseCaching
+
+
 class FIFOCache(BaseCaching):
-    ''' FIFOCaching Dictionary class '''
+    ''' Fifo class '''
 
     def __init__(self):
         super().__init__()
@@ -15,3 +20,7 @@ class FIFOCache(BaseCaching):
         self.cache_data[key] = item
 
     def get(self, key):
+        ''' Must return the value in self.cache_data linked to key. '''
+        if key is None or key not in self.cache_data:
+            return
+        return self.cache_data[key]
