@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-'''task 3'''
+'''LRU caching'''
 
 from base_caching import BaseCaching
 

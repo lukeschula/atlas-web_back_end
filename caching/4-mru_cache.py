@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-'''task 4'''
+'''MRU caching'''
 from collections import OrderedDict
 
 
