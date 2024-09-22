@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
-''' task 1 '''
+""" BasicCache module """
 BaseCaching = __import__('base_caching').BaseCaching
 
 
 class FIFOCache(BaseCaching):
-    ''' Fifo class '''
+    ''' FIFOCaching Dictionary class '''
 
     def __init__(self):
         super().__init__()
