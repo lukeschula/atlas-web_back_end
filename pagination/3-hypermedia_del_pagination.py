@@ -55,4 +55,4 @@ class Server:
             'index': index,
             'next_index': next_index,
             'page_size': page_size,
-            'data': data
+            'data': data,
