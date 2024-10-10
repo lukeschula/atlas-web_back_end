@@ -58,3 +58,25 @@ class Cache:
         key = str(uuid.uuid4())
         self._redis.set(key, data)  # stores data in redis using generated key
         return key
+
+    def get(self, key: str, fn: Optional[Callable] = None) \
+            -> Union[str, bytes, int, float]:
+        '''Retrieve data from redis'''
+        data = self._redis.get(key)
+        if key is None:
+            return None
+        if fn:
+            return fn(data)
+        return data
+
+    def get_str(self, key: str) -> Optional[str]:
+        '''Decode bytes to str'''
+        return self.get(key, lambda k: k.decode('utf-8'))
+
+    def get_int(self, key: str) -> Optional[int]:
+        '''Decode bytes to int'''
+        return self.get(key, lambda k: int(k))
+
+    def increment(self, key: str) -> int:
+        '''Increment the value'''
+        return self._redis.incr(key)
