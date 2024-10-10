@@ -1,4 +1,4 @@
--- Buy buy buy
+-- Buy at all costs
 CREATE TRIGGER after_order_insert
 AFTER INSERT ON orders
 FOR EACH ROW

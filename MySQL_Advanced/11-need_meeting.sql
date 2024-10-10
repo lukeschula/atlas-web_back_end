@@ -1,4 +1,4 @@
--- No table
+-- No table for NoSQL
 CREATE VIEW need_meeting AS
 SELECT name
 FROM students
