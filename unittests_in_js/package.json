@@ -1,0 +1,22 @@
+{
+    "name": "unittests_in_js",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "lint": "eslint",
+      "test": "mocha --exit"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+      "chai": "^4.3.6",
+      "express": "^4.19.2",
+      "mocha": "^8.4.0",
+      "request": "^2.88.2",
+      "sinon": "^9.2.4"
+    },
+    "devDependencies": {
+      "eslint": "^9.5.0"
+    }
+  }
